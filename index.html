@@ -4,9 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <title>Lloyd Consultation | Professional Consultation Services</title>
 </head>
 <body>
@@ -14,8 +11,8 @@
     <nav class="navigation-bar">
         <div class="logo">Lloyd Consultation</div>
         <div class="nav-button-container">
-            <a href="#home" class="nav-link">Home</a>
-            <a href="#about" class="nav-link">About</a>
+            <a href="#" class="nav-link">Home</a>
+            <a href="about.html" class="nav-link">About</a>
             <a href="#services" class="nav-link">Services</a>
             <a href="#contact" class="nav-link active">Contact</a>
         </div>
@@ -25,52 +22,80 @@
     <section class="hero-section" id="home">
         <div class="hero-content">
             <h1 class="hero-title">Does it feel like Council never listens?</h1>
-            <p class="hero-subtitle">Get professional help navigating local government processes and make your voice heard.</p>
+            <p class="hero-subtitle">Get professional help navigating Local Government and make your voice heard.</p>
             <a href="#contact" class="cta-button">Book a Free Consultation</a>
         </div>
     </section>
 
+    <!-- Ethos & Testimonials Section -->
+    <section style="padding: 36px; align-items: center; display: flex; justify-content: center; min-height: 100vh;">
+        <div style="max-width: 800px">
+            <h2 class="section-title">Passionate service, personalised attention</h2>
+            <p class="section-subtitle">Lloyd Consultation was born from a desire to help locals fight for their communities in a system that is biased towards big business and developers. After spending my early career working in Local Government, I saw the need to give locals a voice. Too often, real concerns disregarded because they didn't use the "correct" language of planning and were seen as emotional rather than rational. In order to give locals the best chance to be heard, I founded Lloyd Consultation and have been providing professional guidance ever since.</p>
+            <h5 class="section-title" style="font-size: 24px;">"Without Harry we could not have written such a professional argument against the Council's changes. We would not hesitate to recommend his services."</h5>
+            <p class="section-subtitle">Wendy - Turners Beach Coast Care - Tasmania</p>
+
+
+        </div>
+    </section>
+
     <!-- Services Section -->
-    <section class="services-section" id="services">
-        <div class="container">
+    <section class="services-section" style="min-height: 50vh;" id="services">
+        <div>
             <h2 class="section-title">Our Services</h2>
             <div class="services-grid">
                 <div class="service-card">
-                    <h3>Council Applications</h3>
-                    <p>Expert guidance through planning permits, building applications, and council submissions.</p>
+                    <h3>Submission Proofreading</h3>
+                    <p>Expert revision of your submission to ensure clarity and effectiveness through industry language and structured arguments.</p>
+                    <h5>$100</h5>
                 </div>
                 <div class="service-card">
                     <h3>Community Advocacy</h3>
-                    <p>Professional representation at council meetings and public hearings.</p>
+                    <p>Professional submission drafting at council meetings and public hearings.</p>
+                    <h5>$150</h5>
                 </div>
                 <div class="service-card">
                     <h3>Strategy & Planning</h3>
                     <p>Develop effective strategies to engage with local government and achieve your goals.</p>
+                    <h5>$200</h5>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Contact Form Section -->
-    <section class="contact-section" id="contact">
-        <div class="container">
-            <h2 class="section-title">Get in Touch</h2>
-            <p class="section-subtitle">Fill out the form below and we'll get back to you within 24 hours.</p>
+    <section class="contact-section" id="contact" style="justify-items: center; min-height : 50vh;">
+                <div style=
+                "width: 400px;
+                 height: auto;
+                 display: flex;
+                 flex-direction: column;
+                 gap: 12px; 
+                 border: 1px solid #333; 
+                 border-radius: 5px;
+                 padding: 16px;
+                 ">
+                    <h2 class="section-title">Get in Touch</h2>
+                    <p class="section-subtitle">Fill out the form below and we'll get back to you within 24 hours.</p>
+
             <!-- modify this form HTML and place wherever you want your form -->
-            <form action="https://formspree.io/f/xjkjgkdw" method="POST">
-              <label>
-                Your email:
-                <input type="email" name="email">
-              </label>
-              <label>
-                Your message:
-                <textarea name="message"></textarea>
-              </label>
-              <!-- your other form fields go here -->
-              <button type="submit">Send</button>
-            </form>
+                    <form action="https://formspree.io/f/xjkjgkdw" method="POST" style="display: flex; flex-direction: column; gap: 12px;">
+                        <label>
+                            Your email:
+                            <input type="email" name="email">
+                        </label>
+                        <label style="min-height: 200px; display: flex; flex-direction: column;">
+                            Your message:
+                            <textarea style="height: 100%" name="message"></textarea>
+                        </label>
+                        <!-- your other form fields go here -->
+                        <button type="submit">Send</button>
+                    </form>
+                </div>
         </div>
     </section>
+
+
 
     <!-- Footer -->
     <footer class="footer">
