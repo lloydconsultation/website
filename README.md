@@ -39,6 +39,7 @@ This is a static website for Lloyd Consultation, hosted on GitHub Pages.
    - Go to your repository's Settings > Pages.
    - Select the `main` branch and `/ (root)` folder.
    - Save and wait a few minutes for deployment.
+   - If site is disabled ensure the branch is set to `main`
 
 Your site will be live at:
 
