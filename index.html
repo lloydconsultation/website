@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <title>Lloyd Consultation | Professional Consultation Services</title>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navigation-bar">
+        <div class="logo">Lloyd Consultation</div>
+        <div class="nav-button-container">
+            <a href="#home" class="nav-link">Home</a>
+            <a href="#about" class="nav-link">About</a>
+            <a href="#services" class="nav-link">Services</a>
+            <a href="#contact" class="nav-link active">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section" id="home">
+        <div class="hero-content">
+            <h1 class="hero-title">Does it feel like Council never listens?</h1>
+            <p class="hero-subtitle">Get professional help navigating local government processes and make your voice heard.</p>
+            <a href="#contact" class="cta-button">Book a Free Consultation</a>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services-section" id="services">
+        <div class="container">
+            <h2 class="section-title">Our Services</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <h3>Council Applications</h3>
+                    <p>Expert guidance through planning permits, building applications, and council submissions.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Community Advocacy</h3>
+                    <p>Professional representation at council meetings and public hearings.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Strategy & Planning</h3>
+                    <p>Develop effective strategies to engage with local government and achieve your goals.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section class="contact-section" id="contact">
+        <div class="container">
+            <h2 class="section-title">Get in Touch</h2>
+            <p class="section-subtitle">Fill out the form below and we'll get back to you within 24 hours.</p>
+            <form class="contact-form" action="https://formspree.io/f/xjkjgkdw" method="POST">
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="issue">Describe Your Issue</label>
+                    <textarea id="issue" name="issue" rows="5" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="scheduling">Preferred Time for Consultation</label>
+                    <input type="text" id="scheduling" name="scheduling" placeholder="e.g., Weekday mornings, Tuesday afternoons" required>
+                </div>
+                <button type="submit" class="submit-button">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2025 Lloyd Consultation. All rights reserved.</p>
+    </footer>
+</body>
+</html>
