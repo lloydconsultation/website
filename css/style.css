@@ -272,6 +272,66 @@ html {
     box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
 }
 
+/* Campaign Pricing Section */
+.funding-visual {
+  width: 100%;
+  max-width: 500px;
+  margin-top: 2rem;
+  text-align: left;
+  font-family: "Inter", sans-serif;
+}
+
+.funding-visual h2 {
+  margin-bottom: 0.5rem;
+}
+
+.funding-amount {
+  color: #4a90e2;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+/* Bar container */
+.milestone-bar {
+  position: relative;
+  background: #e6e6e6;
+  height: 14px;
+  border-radius: 8px;
+  overflow: visible;
+  margin: 2rem 0 3rem 0;
+}
+
+/* Filled section */
+.milestone-bar .fill {
+  height: 100%;
+  background: linear-gradient(90deg, #4a90e2, #357ab8);
+  border-radius: 8px;
+  transition: width 1s ease;
+}
+
+/* Milestone markers */
+.milestone {
+  position: absolute;
+  top: 20px;
+  transform: translateX(-50%);
+  font-size: 0.8rem;
+  color: #555;
+  white-space: nowrap;
+}
+
+.milestone::before {
+  content: "";
+  position: absolute;
+  top: -22px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 2px;
+  height: 18px;
+  background: #555;
+  border-radius: 2px;
+}
+
+
 /* ===== Footer ===== */
 .footer {
     background-color: #1a1a1a;
@@ -453,4 +513,133 @@ input[type="number"]::-webkit-inner-spin-button {
 
 input[type="number"] {
     -moz-appearance: textfield;
+}
+
+/* ===== Campaign Pricing - Funding Visual ===== */
+.funding-visual {
+    width: 100%;
+    max-width: 500px;
+    padding: 2rem;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+}
+
+.funding-title {
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: #1a1a1a;
+    margin-bottom: 0.5rem;
+    text-align: center;
+}
+
+.funding-amount {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #667eea;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.milestone-bar {
+    position: relative;
+    width: 100%;
+    height: 20px;
+    background: #e0e0e0;
+    border-radius: 10px;
+    overflow: visible;
+    margin: 3rem 0;
+}
+
+.milestone-fill {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
+    border-radius: 10px;
+    transition: width 0.5s ease;
+}
+
+.milestone-marker {
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.milestone-dot {
+    width: 16px;
+    height: 16px;
+    background: #fff;
+    border: 3px solid #667eea;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    margin-bottom: 0.5rem;
+}
+
+.milestone-label {
+    position: absolute;
+    top: 35px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #333;
+    white-space: nowrap;
+}
+
+.funding-info {
+    text-align: center;
+    font-size: 1rem;
+    color: #666;
+    margin-top: 1rem;
+}
+
+/* ===== Vertical Progress Bar ===== */
+.milestone-bar-vertical {
+    position: relative;
+    width: 20px;
+    height: 400px;
+    background: #e0e0e0;
+    border-radius: 10px;
+    overflow: visible;
+    margin: 2rem auto;
+}
+
+.milestone-fill-vertical {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: linear-gradient(180deg, #667eea 0%, #764ba2 100%);
+    border-radius: 10px;
+    transition: height 0.5s ease;
+}
+
+.milestone-marker-vertical {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.milestone-dot-vertical {
+    width: 16px;
+    height: 16px;
+    background: #fff;
+    border: 3px solid #667eea;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.milestone-label-vertical {
+    position: absolute;
+    left: 35px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #333;
+    white-space: nowrap;
 }
