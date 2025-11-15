@@ -3,7 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    outline: red solid 1px;
+    /*  outline: red solid 1px; */
 }
 
 body {
@@ -150,6 +150,8 @@ html {
 }
 
 .service-card {
+    display: flex;
+    flex-direction: column;
     background: #fff;
     padding: 2rem;
     border-radius: 10px;
@@ -168,6 +170,12 @@ html {
     color: #667eea;
 }
 
+.service-card h5 {
+    margin-top: auto;
+    width: fit-content;
+    align-self: flex-end;
+}
+
 .service-card p {
     color: #555;
     line-height: 1.6;
@@ -176,7 +184,8 @@ html {
 /* ===== Contact Form Section ===== */
 .contact-section {
     padding: 5rem 2rem;
-    background-color: #fff;
+    background-color: #f8f9fa;
+
 }
 
 .contact-form {
@@ -217,7 +226,6 @@ html {
 }
 
 .form-group textarea {
-    resize: vertical;
     min-height: 120px;
 }
 

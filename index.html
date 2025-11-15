@@ -12,8 +12,8 @@
         <div class="logo">Lloyd Consultation</div>
         <div class="nav-button-container">
             <a href="#" class="nav-link">Home</a>
-            <a href="about.html" class="nav-link">About</a>
             <a href="#services" class="nav-link">Services</a>
+            <a href="campaign-pricing.html" class="nav-link">Campaign Pricing</a>
             <a href="#contact" class="nav-link active">Contact</a>
         </div>
     </nav>
@@ -47,17 +47,17 @@
                 <div class="service-card">
                     <h3>Submission Proofreading</h3>
                     <p>Expert revision of your submission to ensure clarity and effectiveness through industry language and structured arguments.</p>
-                    <h5>$100</h5>
+                    <h5>Price: $100</h5>
                 </div>
                 <div class="service-card">
-                    <h3>Community Advocacy</h3>
-                    <p>Professional submission drafting at council meetings and public hearings.</p>
-                    <h5>$150</h5>
+                    <h3>Free 30 min Consultation</h3>
+                    <p>Sit down with an expert to discuss your issue and receive personalized advice to help you progress your submission.</p>
+                    <h5>Price: Free</h5>
                 </div>
                 <div class="service-card">
-                    <h3>Strategy & Planning</h3>
-                    <p>Develop effective strategies to engage with local government and achieve your goals.</p>
-                    <h5>$200</h5>
+                    <h3>Launch a Campaign</h3>
+                    <p>Work with us to organize and launch a community campaign to effectively advocate for your cause.</p>
+                    <h5><a href="campaign-pricing.html" class="h5">Learn about Campaign Pricing</a></h5>
                 </div>
             </div>
         </div>
@@ -69,27 +69,38 @@
                 "width: 400px;
                  height: auto;
                  display: flex;
-                 flex-direction: column;
-                 gap: 12px; 
-                 border: 1px solid #333; 
-                 border-radius: 5px;
+                 flex-direction: column; 
+                 border-radius: 10px;
+                 box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+                 background: #fff;
+                 gap: 12px;
                  padding: 16px;
                  ">
-                    <h2 class="section-title">Get in Touch</h2>
-                    <p class="section-subtitle">Fill out the form below and we'll get back to you within 24 hours.</p>
+                    <h2 class="section-title" style="margin-bottom: 0.1rem;">Let’s work together</h2>
+                    <p class="section-subtitle" style="margin-bottom: 0.2rem;">Fill out the form below and we'll get back to you within 24 hours.</p>
 
             <!-- modify this form HTML and place wherever you want your form -->
-                    <form action="https://formspree.io/f/xjkjgkdw" method="POST" style="display: flex; flex-direction: column; gap: 12px;">
-                        <label>
-                            Your email:
-                            <input type="email" name="email">
+                    <form action="https://formspree.io/f/xjkjgkdw" method="POST" style="display: flex; flex-direction: column; gap: 6px;">
+                        <label style="display: flex; flex-direction: column;">
+                            <input style="min-height: 24px; padding-left: 8px;" type="text" name="first_name" placeholder="First Name" required>
+                        </label>   
+                        <label style="display: flex; flex-direction: column;">
+                            <input style="min-height: 24px; padding-left: 8px;" type="text" name="last_name" placeholder="Last Name" required>
+                        </label>                       
+                        <label style="display: flex; flex-direction: column;">
+                            <input style="min-height: 24px; padding-left: 8px;" type="email" name="email" placeholder="Email" required>
+                        </label>
+                        <label style="display: flex; flex-direction: column;">
+                            <input style="min-height: 24px; padding-left: 8px;" type="number" name="phone" placeholder="Phone Number">
+                        </label>
+                        <label style="display: flex; flex-direction: column;">
+                            <input style="min-height: 24px; padding-left: 8px;" type="text" name="local-government-area" placeholder="Local Government Area" required>
                         </label>
                         <label style="min-height: 200px; display: flex; flex-direction: column;">
-                            Your message:
-                            <textarea style="height: 100%" name="message"></textarea>
+                            <textarea style="min-height: 200px; width: 100%; resize: none; padding: 8px;" name="submission_details" placeholder="What are some details about your submission?" required></textarea>
                         </label>
                         <!-- your other form fields go here -->
-                        <button type="submit">Send</button>
+                        <button style="width: 50%; align-self: center;" type="submit">Send</button>
                     </form>
                 </div>
         </div>
