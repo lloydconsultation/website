@@ -66,7 +66,7 @@ html {
 
 /* ===== Hero Section ===== */
 .hero-section {
-    background: url('../images/Hero-background.jpg') center/cover no-repeat;
+    background: url('../images/Australian-field.jpg') center/cover no-repeat;
     min-height: 100vh;
     display: flex;
     align-items: center;
