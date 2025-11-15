@@ -69,8 +69,22 @@
     <!-- Services Section -->
     <section class="services-section" id="services">
       <div class="split-section">
-        <div class="split-image" style=" background: url('images/Australian-field.jpg') center/cover no-repeat; border-right: 1.5px solid #846161; border-bottom: 3px solid #846161;"></div>
-        <div class="split-content" style="border-left: 1.5px solid #846161; border-bottom: 3px solid #846161;">
+        <div
+          class="split-image"
+          style="
+            background: url('images/Australian-field.jpg') center/cover
+              no-repeat;
+            border-right: 1.5px solid #846161;
+            border-bottom: 3px solid #846161;
+          "
+        ></div>
+        <div
+          class="split-content"
+          style="
+            border-left: 1.5px solid #846161;
+            border-bottom: 3px solid #846161;
+          "
+        >
           <h2 class="section-title">Our Services</h2>
           <div class="services-stack">
             <div class="service-card">
@@ -112,8 +126,22 @@
       <div class="split-section">
         <div class="split-content" style="border-right: 1.5px solid #846161">
           <div
-            style=" width: 100%; max-width: 400px; height: auto; display: flex; flex-direction: column; justify-content: center; align-self: center; border-radius: 10px; box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08); background: #fff; gap: 12px; padding: 16px; margin: 1rem 0; "
->
+            style="
+              width: 100%;
+              max-width: 400px;
+              height: auto;
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              align-self: center;
+              border-radius: 10px;
+              box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+              background: #fff;
+              gap: 12px;
+              padding: 16px;
+              margin: 1rem 0;
+            "
+          >
             <h2 class="section-title" style="margin-bottom: 0.1rem">
               Let’s work together
             </h2>
@@ -161,6 +189,23 @@
                 />
               </label>
               <label style="display: flex; flex-direction: column">
+                <select
+                  style="min-height: 24px; padding-left: 5px; color: #797979"
+                  name="request_type"
+                  required
+                  onchange="this.style.color='#000'"
+                >
+                  <option value="" disabled selected style="color: #999">
+                    Select Request Type*
+                  </option>
+                  <option value="Submission Proofreading">
+                    Submission Proofreading
+                  </option>
+                  <option value="Free Template">Free Template</option>
+                  <option value="Free Consultation">Free Consultation</option>
+                </select>
+              </label>
+              <label style="display: flex; flex-direction: column">
                 <input
                   style="min-height: 24px; padding-left: 8px"
                   type="text"
@@ -193,7 +238,8 @@
         <div
           class="split-image"
           style="
-            background: url('images/Australian-surf.jpg') center/cover no-repeat; border-left: 1.5px solid #846161;
+            background: url('images/Australian-surf.jpg') center/cover no-repeat;
+            border-left: 1.5px solid #846161;
           "
         ></div>
       </div>

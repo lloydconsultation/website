@@ -3,7 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    outline: red solid 1px;
+    /* outline: red solid 1px; */
 }
 
 body {
@@ -633,6 +633,7 @@ input[type="number"] {
     border: 3px solid #667eea;
     border-radius: 50%;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: background 0.5s ease, border-color 0.5s ease;
 }
 
 .milestone-label-vertical {
@@ -642,4 +643,5 @@ input[type="number"] {
     font-weight: 600;
     color: #333;
     white-space: nowrap;
+    transition: color 0.5s ease, font-weight 0.5s ease;
 }
